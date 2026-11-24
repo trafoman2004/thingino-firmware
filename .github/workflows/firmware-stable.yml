@@ -26,7 +26,7 @@ on:
         type: boolean
         description: 'Disable Telegram notifications'
         required: false
-        default: false
+        default: true
       tg_scratch:
         type: boolean
         description: 'Use TG scratch channel'
@@ -36,7 +36,7 @@ on:
         type: boolean
         description: 'Enable build time graph'
         required: false
-        default: false
+        default: true
       teacup_only:
         type: boolean
         description: 'Only build Tea Cup profile'
@@ -51,6 +51,7 @@ on:
         type: string
         description: 'Comma-separated list of boards to build (e.g. board1,board2)'
         required: false
+        default: 'mercusys_mc510_t23n_sc3332_wq9001'
       skip_release:
         type: boolean
         description: 'Do not publish to a GitHub release (test build)'
